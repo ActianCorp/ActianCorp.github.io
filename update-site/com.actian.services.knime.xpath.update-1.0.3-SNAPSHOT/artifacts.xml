@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='XPath - Knime - Update' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1440109491349'/>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='3'>
+    <artifact classifier='osgi.bundle' id='com.actian.services.knime.xpath.operators' version='1.0.3.201508202224'>
+      <properties size='5'>
+        <property name='artifact.size' value='42949'/>
+        <property name='download.size' value='42949'/>
+        <property name='maven-groupId' value='com.actian.services.dataflow'/>
+        <property name='maven-artifactId' value='com.actian.services.knime.xpath.operators'/>
+        <property name='maven-version' value='1.0.3-SNAPSHOT'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.actian.services.knime.xpath.functions' version='1.0.3.201508202224'>
+      <properties size='5'>
+        <property name='artifact.size' value='17771'/>
+        <property name='download.size' value='17771'/>
+        <property name='maven-groupId' value='com.actian.services.dataflow'/>
+        <property name='maven-artifactId' value='com.actian.services.knime.xpath.functions'/>
+        <property name='maven-version' value='1.0.3-SNAPSHOT'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='com.actian.services.knime.xpath.feature' version='1.0.3.201508202224'>
+      <properties size='6'>
+        <property name='artifact.size' value='3038'/>
+        <property name='download.size' value='3038'/>
+        <property name='maven-groupId' value='com.actian.services.dataflow'/>
+        <property name='maven-artifactId' value='com.actian.services.knime.xpath.feature'/>
+        <property name='maven-version' value='1.0.3-SNAPSHOT'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
